@@ -1,0 +1,25 @@
+body{
+    font-family: moserat;
+}
+.max_height{
+    max-height: 25rem;
+    width: auto;
+}
+.bg-dark-brown {
+    background-color: #1D120E; /* Dark brown color */
+}
+.bg-dark-grey{
+    background-color: rgb(43,42,40);
+}
+
+.headerLink{
+    font-weight: 600;
+    font-style: bold;
+    color: white;
+}
+
+
+.title{
+    /*font-size: large;*/
+    color: goldenrod;
+}
