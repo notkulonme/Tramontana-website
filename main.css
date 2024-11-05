@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1D120E !important;
+}
+.max_height{
+    max-height: 25rem;
+    width: auto;
+}
+.bg-dark-brown {
+    background-color: #1D120E; /* Dark brown color */
+}
+.bg-dark-grey{
+    background-color: rgb(43,42,40);
+}
+
+.headerLink{
+    font-weight: 600;
+    font-style: bold;
+    color: white;
+}
+a:hover{
+    color: gray !important; 
+}
+a:active{
+    color: gray !important;
+}   
+.map-container {
+    width: 50vw; /* Set width to 50% */
+    height: 50vh; /* Set height to 25% of the viewport height */
+}
+
+.title{
+    /*font-size: large;*/
+    color: goldenrod;
+}
+
+.vertical-line {
+    border-left: 2px solid black;
+    height: 200px;
+}
+.menu-card{
+    height: 25vw;
+    max-width: 50vh;
+    background-color: brown;
+}
+@media (max-width: 767.98px){
+    .menu-card{
+        height: 25vh;
+        max-width: 70vh;
+    }
+}
+.menu-card img{
+    height: 80%;
+}
+
