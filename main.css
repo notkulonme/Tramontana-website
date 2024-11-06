@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 .max_height{
     max-height: 25rem;
@@ -17,10 +18,10 @@ body{
     font-style: bold;
     color: white;
 }
-a:hover{
+.headerLink:hover{
     color: gray !important; 
 }
-a:active{
+.headerLink:active{
     color: gray !important;
 }   
 .map-container {
@@ -40,7 +41,7 @@ a:active{
 .menu-card{
     height: 25vw;
     max-width: 50vh;
-    background-color: brown;
+    background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 767.98px){
     .menu-card{
