@@ -24,6 +24,9 @@ body{
 .headerLink:active{
     color: gray !important;
 }   
+.headerLink:visited{
+    color: white;
+}
 .map-container {
     width: 50vw; /* Set width to 50% */
     height: 50vh; /* Set height to 25% of the viewport height */
