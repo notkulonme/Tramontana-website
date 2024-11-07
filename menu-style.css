@@ -1,0 +1,133 @@
+/* Existing styles */
+h1 {
+    text-align: center;
+    color: #F8F9FA;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #F8F9FA;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #4E4E4A;
+}
+
+/* Menu sections */
+.menu-section {
+    margin: 80px auto 20px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #3C3C3B;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    table-layout: fixed; /* Prevent columns from expanding based on content */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #555555;
+    word-wrap: break-word; /* Ensures text wraps */
+    overflow: hidden; /* Prevents overflow of content */
+}
+
+th {
+    background-color: #4E4E4A;
+    color: #FFFFFF;
+}
+
+td {
+    background-color: #3A3A38;
+}
+
+tr:hover {
+    background-color: #555555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu-section h2 {
+        font-size: 1.3em;
+    }
+
+    /* Table handling on small screens */
+    table {
+        width: 100%;
+        margin: 0;
+        table-layout: fixed; /* Fix column widths */
+        padding: 0; /* Remove unnecessary padding on table */
+    }
+
+    th, td {
+        text-align: left; /* Align text to the left for mobile */
+        padding: 8px 5px; /* Reduce padding for mobile */
+        font-size: 0.9em; /* Reduce font size for mobile */
+        overflow: hidden; /* Prevent overflow */
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    tr {
+        background-color: #4E4E4A;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    /* Remove the 'data-label' and its content */
+    td::before {
+        content: none;  /* Remove the 'data-label' pseudo-element */
+    }
+
+    td {
+        max-width: 120px; /* Prevent columns from becoming too wide on mobile */
+    }
+}

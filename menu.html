@@ -7,91 +7,263 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="menu-style.css">
 </head>
 <body>
-<div class="text-center bg-dark-grey ">
-    <img src="images/logo.jpeg" class="img-fluid max_height">
-</div>
-<div class="bg-dark-brown p-lg-2 p-sm-2"></div>
-<header class="sticky-top">
-    <div class=" container-fluid bg-dark-brown p-lg-4 p-sm-3" >
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link headerLink">O NAS</a> 
-                <!-- about us -->
-            </li>
-            <li class="nav-item">
-                <a href="menu.html" class="nav-link headerLink">NASZE MENU</a>
-                <!-- our menu -->
-            </li>
-            <li class="nav-item"> 
-                <a href="photos.html" class="nav-link headerLink">GALERIA</a>
-                <!-- photos -->
-            </li>
-            <li class="nav-item"> 
-                <a href="events.html" class="nav-link headerLink">IMPREZY</a>
-                <!-- events -->
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link headerLink">KONTAKT</a>
-                <!-- contact -->
-            </li>
-        </ul>
-    
-</header>
-<div class="bg-dark-brown p-lg-2 p-sm-2"></div>
-
-<!-- end of the header -->  
- 
-
-
-<!-- there should be bootstrap cards of the food -->
-<div class="container bg-light pt-4 ">
-    <h1 class="text-center title pt-4 pb-5">NASZE MENU</h1>
-    <div class="container ">
-        <div class="row">
-            <div class="col">
-                <div class="card menu-card" >
-                    <img class="card-img-top" src="images/galery/01.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">kaja</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card menu-card" >
-
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card menu-card" >
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row pt-4">
-            <div class="col">
-                <div class="card menu-card" >
-
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card menu-card" >
-
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card menu-card" >
-
-                </div>
-            </div>
-        </div>
+    <div class="text-center bg-dark-grey ">
+        <img src="images/logo.jpeg" class="img-fluid max_height">
     </div>
-</div>
+    <div class="bg-dark-brown p-lg-2 p-sm-2"></div>
+    <header class="sticky-top">
+        <div class=" container-fluid bg-dark-brown p-lg-4 p-sm-3" >
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link headerLink">O NAS</a> 
+                    <!-- about us -->
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link headerLink">NASZE MENU</a>
+                    <!-- our menu -->
+                </li>
+                <li class="nav-item"> 
+                    <a href="photos.html" class="nav-link headerLink">GALERIA</a>
+                    <!-- photos -->
+                </li>
+                <li class="nav-item"> 
+                    <a href="events.html" class="nav-link headerLink">IMPREZY</a>
+                    <!-- events -->
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link headerLink">KONTAKT</a>
+                    <!-- contact -->
+                </li>
+            </ul>
+        
+    </header>
+    <div class="bg-dark-brown p-lg-2 p-sm-2"></div>
+    
+    <!-- end of the header -->
+<div class="container pt-2 bg-light">
+    <h1 class="text-center title pt-4 pb-5">NASZE MENU</h1>
+
+    <div class="menu-section">
+        <h2>Pizza</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td data-label="name">Margherita</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/kapary/ <br> czosnek/pomidorki koktajlowe</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Tramontana</td>
+                    <td data-label="ingredients" class=".rsponsive-div">rukola/sos śmietanowy/ <br> parmezan/sos/ser/szynka/pieczarki</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Pancetta</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/boczek/pieczarki/serek topiony</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Polo</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/kurczak/cebula/ <br> czosnek/papryczki chili</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Carbonara</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos biały/ser/boczek/ <br> cebula/czosnek/pietruszka/parmezan</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Tutti Verde</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/burak/brokul/pestki dyni</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Primavera</td>
+                    <td data-label="ingredients" class=".rsponsive-div">kozi ser/oliwki</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Prosciutto</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/szynka parmeńska/rukola/pesto/parmezan</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Salame Piccante</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/salami Spianata Piccante/ <br> kapary/pepperoncino/sos maślano-winny</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Gravlax</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/losos/rukola/pomidorki koktajlowe/parmezan/sos miodowo-musztardowy</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Frutti Di Mare</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/krewetki/cebula/ <br> kapary/pietruszka</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Carne</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos/ser/boczek/szynka/ <br> kurczak/cebula/pieczarki</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Broccoli</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos biały/ser/kurczak/brokul</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Polonia</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos musztardowy/ser/ <br> kielbasa/cebula/ogórek kiszony</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="menu-section">
+        <h2>Főételek</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td data-label="name">Carpaccio z polędwicy wołowej</td>
+                    <td data-label="ingredients" class="responsive-div">pomidor pieczony/kapary/oliwki/rukola/parmezan</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Antrykot Sezonowany</td>
+                    <td data-label="ingredients" class=".rsponsive-div">ziemniaki lub frytki z dipem czosnkowym/mix salat</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Gravlax na pieczonym buraku</td>
+                    <td data-label="ingredients" class=".rsponsive-div">rukola/sos vinegrette/cytryna/grzanka</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Policzki Wieprzowe</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos z pieczonej cebuli/puree ziemniaczane/mix salat</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Pieczywo Serowo-Czosnkowe</td>
+                    <td data-label="ingredients" class=".rsponsive-div">ser mozzarella/oliwa czosnkowa</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Roladka z Kurczaka ze Szpinakiem</td>
+                    <td data-label="ingredients" class=".rsponsive-div">gnocchi buraczkowe/ <br> mix salat/sos gorgonzola</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Roladka z Kurczaka z Pieczarkami</td>
+                    <td data-label="ingredients" class=".rsponsive-div">kluski/mix salat/sos serowy</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Ryba po Parysku</td>
+                    <td data-label="ingredients" class=".rsponsive-div">frytki/surówka</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Udko z Kaczki</td>
+                    <td data-label="ingredients" class=".rsponsive-div">kluski/mix salat</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Burger</td>
+                    <td data-label="ingredients" class=".rsponsive-div">bulka własnego wypieku/mięso/ <br> ser/boczek/ <br> rukola/ogórek konserwowy/cebulka/frytki/pomidor</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Sałatka z Piersią z Kaczki</td>
+                    <td data-label="ingredients" class=".rsponsive-div">grillowana gruszka/gorgonzola/mix salat/ <br> sos vinegrette/malinowy/balsamico</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Sałatka z Krewetkami</td>
+                    <td data-label="ingredients" class=".rsponsive-div">mix salat/sos winno-maślany/pomidor</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Sałatka z Polędwicą Wołową</td>
+                    <td data-label="ingredients" class=".rsponsive-div">sos chimichurri/mix salat/gorgonzola/granat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="menu-section">
+        <h2>Italok</h2>
+        <table>
+            <tbody>
+                <!-- Meleg italok -->
+                <tr>
+                    <td data-label="name">Herbata</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Kawa Czarna</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Kawa Biała/Cappuccino</td>
+                    
+                </tr>
+                <tr>
+                    <td data-label="name">Latte Macchiato</td>
+                    
+                </tr>
+                <tr>
+                    <td data-label="name">Latte Karmelowe</td>
+                    
+                </tr>
+                <tr>
+                    <td data-label="name">Latte Czekoladowe</td>
+                    
+                </tr>
+                <tr>
+                    <td data-label="name">Espresso</td>
+                    
+                </tr>
+                <!-- Hideg italok -->
+                <tr>
+                    <td data-label="name">Pepsi</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Mirinda</td>
+                </tr>
+                <tr>
+                    <td data-label="name">7UP</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Tonic</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Sok Toma</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Ice Tea</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Woda Gazowana</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Woda Niegazowana</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Piwo Lane 0,5l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Piwo Lane 0,3l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Butelka Czeska 0,5l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Grimbergen 0,33l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Piwo Zatecky 0% 0,5l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Okocim Smakowe 0%</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Piwo Pszeniczne Lane 0,33l</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Piwo Jagodowe Lane 0,5l</td>
+                </tr>
+                
+                <!-- Borok -->
+                <tr>
+                    <td data-label="name">Kieliszek</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Karakafa 500ml</td>
+                </tr>
+                <tr>
+                    <td data-label="name">Karakafa 1000ml</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>   
 </body>
 </html>
