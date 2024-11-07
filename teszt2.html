@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        /* Base styles */
+body {
+    background-color: #FFFFFF; /* Dark grey background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; /* White text */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #F8F9FA; /* Light text for titles */
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Navigation Menu */
+header {
+    background-color: rgba(44, 44, 40, 0.8); /* Transparent dark grey */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #F8F9FA; /* Light text for nav links */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #4E4E4A; /* Slightly lighter grey for hover */
+}
+
+/* Menu sections */
+.menu-section {
+    margin: 80px auto 20px; /* Adjust for fixed header */
+    width: 90%;
+    max-width: 1000px;
+    background-color: #3C3C3B; /* Darker brownish grey */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #555555; /* Divider between rows */
+    word-wrap: break-word;  /* Ensures text in cells breaks and wraps */
+}
+
+th {
+    background-color: #4E4E4A; /* Dark grey for table headers */
+    color: #FFFFFF;
+}
+
+td {
+    background-color: #3A3A38; /* Darker background for table cells */
+}
+
+tr:hover {
+    background-color: #555555; /* Dark grey on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menu-section h2 {
+        font-size: 1.3em;
+    }
+
+    /* Table handling on small screens */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background-color: #4E4E4A;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    td {
+        padding: 8px;
+        text-align: right;
+        position: relative;
+        word-wrap: break-word;  /* Ensure word breaks */
+        white-space: normal; /* Ensure text wraps */
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">O NAS</a>
+            <a href="menu.html">NASZE MENU</a>
+            <a href="photos.html">GALERIA</a>
+            <a href="#contact">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <h1>Étterem Menü</h1>
+
+<div class="menu-section">
+    <h2>Pizza</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Étel neve</th>
+                <th>Leírás</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Étel neve">Margherita</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/kapary/ <br> czosnek/pomidorki koktajlowe</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Tramontana</td>
+                <td data-label="Leírás" class=".rsponsive-div">rukola/sos śmietanowy/ <br> parmezan/sos/ser/szynka/pieczarki</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Pancetta</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/boczek/pieczarki/serek topiony</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Polo</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/kurczak/cebula/ <br> czosnek/papryczki chili</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Carbonara</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos biały/ser/boczek/ <br> cebula/czosnek/pietruszka/parmezan</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Tutti Verde</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/burak/brokul/pestki dyni</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Primavera</td>
+                <td data-label="Leírás" class=".rsponsive-div">kozi ser/oliwki</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Prosciutto</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/szynka parmeńska/rukola/pesto/parmezan</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Salame Piccante</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/salami Spianata Piccante/ <br> kapary/pepperoncino/sos maślano-winny</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Gravlax</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/losos/rukola/pomidorki koktajlowe/parmezan/sos miodowo-musztardowy</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Frutti Di Mare</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/krewetki/cebula/ <br> kapary/pietruszka</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Carne</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos/ser/boczek/szynka/ <br> kurczak/cebula/pieczarki</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Broccoli</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos biały/ser/kurczak/brokul</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Polonia</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos musztardowy/ser/ <br> kielbasa/cebula/ogórek kiszony</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="menu-section">
+    <h2>Főételek</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Étel neve</th>
+                <th>Leírás</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Étel neve">Carpaccio z polędwicy wołowej</td>
+                <td data-label="Leírás" class="responsive-div">pomidor pieczony/kapary/oliwki/rukola/parmezan</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Antrykot Sezonowany</td>
+                <td data-label="Leírás" class=".rsponsive-div">ziemniaki lub frytki z dipem czosnkowym/mix salat</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Gravlax na pieczonym buraku</td>
+                <td data-label="Leírás" class=".rsponsive-div">rukola/sos vinegrette/cytryna/grzanka</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Policzki Wieprzowe</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos z pieczonej cebuli/puree ziemniaczane/mix salat</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Pieczywo Serowo-Czosnkowe</td>
+                <td data-label="Leírás" class=".rsponsive-div">ser mozzarella/oliwa czosnkowa</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Roladka z Kurczaka ze Szpinakiem</td>
+                <td data-label="Leírás" class=".rsponsive-div">gnocchi buraczkowe/ <br> mix salat/sos gorgonzola</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Roladka z Kurczaka z Pieczarkami</td>
+                <td data-label="Leírás" class=".rsponsive-div">kluski/mix salat/sos serowy</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Ryba po Parysku</td>
+                <td data-label="Leírás" class=".rsponsive-div">frytki/surówka</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Udko z Kaczki</td>
+                <td data-label="Leírás" class=".rsponsive-div">kluski/mix salat</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Burger</td>
+                <td data-label="Leírás" class=".rsponsive-div">bulka własnego wypieku/mięso/ <br> ser/boczek/ <br> rukola/ogórek konserwowy/cebulka/frytki/pomidor</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Sałatka z Piersią z Kaczki</td>
+                <td data-label="Leírás" class=".rsponsive-div">grillowana gruszka/gorgonzola/mix salat/sos vinegrette/malinowy/balsamico</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Sałatka z Krewetkami</td>
+                <td data-label="Leírás" class=".rsponsive-div">mix salat/sos winno-maślany/pomidor</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Sałatka z Polędwicą Wołową</td>
+                <td data-label="Leírás" class=".rsponsive-div">sos chimichurri/mix salat/gorgonzola/granat</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="menu-section">
+    <h2>Italok</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Étel neve</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Meleg italok -->
+            <tr>
+                <td data-label="Étel neve">Herbata</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Kawa Czarna</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Kawa Biała/Cappuccino</td>
+                
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Latte Macchiato</td>
+                
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Latte Karmelowe</td>
+                
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Latte Czekoladowe</td>
+                
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Espresso</td>
+                
+            </tr>
+            <!-- Hideg italok -->
+            <tr>
+                <td data-label="Étel neve">Pepsi</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Mirinda</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">7UP</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Tonic</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Sok Toma</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Ice Tea</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Woda Gazowana</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Woda Niegazowana</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Piwo Lane 0,5l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Piwo Lane 0,3l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Butelka Czeska 0,5l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Grimbergen 0,33l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Piwo Zatecky 0% 0,5l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Okocim Smakowe 0%</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Piwo Pszeniczne Lane 0,33l</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Piwo Jagodowe Lane 0,5l</td>
+            </tr>
+            
+            <!-- Borok -->
+            <tr>
+                <td data-label="Étel neve">Kieliszek</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Karakafa 500ml</td>
+            </tr>
+            <tr>
+                <td data-label="Étel neve">Karakafa 1000ml</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+</body>
+</html>
